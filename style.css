@@ -1,0 +1,118 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    max-height: 500px;
+    max-width: 500px;
+    overflow-y: auto;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.30);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+
+}
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.button_section {
+    justify-content: flex-end;
+}
+.cancel_btn,
+.submit_btn,
+.delete_btn{
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+    outline: none;
+}
+.note_section {
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 260px;
+    margin: 10px;
+}
+.note_title {
+    margin-top: 0;
+}
+.color_select_content {
+    position: absolute;
+    padding: 5px 7px 3px;
+    z-index: 1;
+    width: 112px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    left: 0;
+    top: -70px;
+    visibility:hidden;
+    opacity:0;
+    transition: visibility linear 0.5s,opacity 0.5s linear;
+}
+.color_select_content:hover {
+    visibility:visible;
+    opacity:1;
+}
+.color_select:hover + .color_select_content {
+    visibility:visible;
+    opacity:1;
+}
+.color_select {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.fas.fa-circle {
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    margin: 4px;
+}
+.white {
+    color: #fff;
+}
+.red {
+    color: #f28b82;
+}
+.blue {
+    color: #aecbfa;
+}
+.green {
+    color: #ccff90;
+}
+.purple {
+    color: #d7aefb;
+}
+.yellow {
+    color: #fff475;
+}
+.white_background {
+    background-color: #fff;
+}
+.red_background {
+    background-color: #f28b82;
+}
+.blue_background {
+    background-color: #aecbfa;
+}
+.green_background {
+    background-color: #ccff90;
+}
+.purple_background {
+    background-color: #d7aefb;
+}
+.yellow_background {
+    background-color: #fff475;
+}
