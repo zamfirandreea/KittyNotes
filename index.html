@@ -6,24 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
 </head>
 <body>
 <div class="container">
-    <label class="note">
-        <input class="title" type="text" placeholder="Title">
-        <input class="description" type="text" placeholder="Take a note...">
+    <div class="note">
+        <div contenteditable="true" class="title" placeholder="Title"></div>
+        <div contenteditable="true" class="description" placeholder="Add text here"></div>
+        <input class="color" type="text" hidden>
         <section class="button_section">
             <section class="color_picker">
-<!--                <select>-->
-<!--                    <option value="fa fa-circle">&#xf111;</option>-->
-<!--                    <option value="red"></option>-->
-<!--                    <option value="green"></option>-->
-<!--                    <option value="teal"></option>-->
-<!--                    <option value="blue"></option>-->
-<!--                    <option value="purple"></option>-->
-<!--                </select>-->
                 <div class="dropdown">
                     <button class="color_select"><i class="fa fa-palette"></i></button>
                     <div class="color_select_content">
@@ -39,7 +30,7 @@
             <button class="cancel_btn" type="reset">Cancel</button>
             <button class="submit_btn" type="submit">Add</button>
         </section>
-    </label>
+    </div>
 </div>
 
 

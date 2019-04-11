@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     min-height: 60px;
-    max-height: 500px;
     max-width: 500px;
     overflow-y: auto;
     border: 1px solid transparent;
@@ -11,14 +10,20 @@
     border-radius: 10px;
     padding: 10px;
     margin: 50px auto;
-
 }
-input {
+.title,
+.description,
+.note_title,
+.note_description{
     padding: 12px 20px;
     margin: 8px 0;
     border: none;
     outline: none;
     background-color: transparent;
+    cursor: text;
+}
+[contenteditable=true]:empty::before {
+    content: attr(placeholder);
 }
 .button_section {
     justify-content: flex-end;
@@ -31,6 +36,21 @@ input {
     background-color: transparent;
     margin-right: 20px;
     outline: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+.note_section::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1b0";
+    position: absolute;
+    top: -18px;
+    font-size: 30px;
+    right: -11px;
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    opacity: 0.8;
 }
 .note_section {
     width: fit-content;
@@ -38,12 +58,21 @@ input {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     display: inline-flex;
+    position: relative;
     flex-direction: column;
-    min-width: 260px;
+    min-width: 300px;
+    max-width: 300px;
     margin: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.30);
 }
-.note_title {
-    margin-top: 0;
+.note_title,
+.title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.actions_section {
+    display: inline-flex;
+    justify-content: flex-end;
 }
 .color_select_content {
     position: absolute;
