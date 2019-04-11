@@ -6,5 +6,5 @@ Requirements:
 - add note
 - delete note
 - change color of note
-- notes should have: title, description, color change
 - use Local Storage for note persistence
+- added edit to the new noted
