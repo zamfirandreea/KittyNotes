@@ -7,4 +7,4 @@ Requirements:
 - delete note
 - change color of note
 - use Local Storage for note persistence
-- added edit to the new noted
+- added edit to the note
